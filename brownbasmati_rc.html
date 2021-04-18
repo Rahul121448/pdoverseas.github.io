@@ -1,0 +1,591 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from pdoverseas.com/brownbasmati_rc.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 18:05:57 GMT -->
+<head>
+<title>PD Overseas | rice and wheat exporter</title>
+<!-- Bootstrap -->
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/blue.css" rel="stylesheet" type="text/css" media="all" />
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--start slider -->
+    <link rel="stylesheet" href="css/fwslider.css" media="all">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/fwslider.js"></script>
+<!--end slider -->
+<!-- must have -->
+<link href="css/allinone_carousel.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="js/allinone_carousel.js" type="text/javascript"></script>
+<!--[if IE]><script src="js/excanvas.compiled.js" type="text/javascript"></script><![endif]-->
+<!-- must have -->
+	<script>
+		jQuery(function() {
+
+			jQuery('#allinone_carousel_charming').allinone_carousel({
+				skin: 'charming',
+				width: 990,
+				height: 454,
+				responsive:true,
+				autoPlay: 3,
+				resizeImages:true,
+				autoHideBottomNav:false,
+				showElementTitle:false,
+				verticalAdjustment:50,
+				showPreviewThumbs:false,
+				//easing:'easeOutBounce',
+				numberOfVisibleItems:5,
+				nextPrevMarginTop:23,
+				playMovieMarginTop:0,
+				bottomNavMarginBottom:-10
+			});		
+		});
+	</script>
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				$("#owl-demo").owlCarousel({
+					items : 10,
+					lazyLoad : true,
+					autoPlay : true,
+					navigation : true,
+					navigationText : ["", ""],
+					rewindNav : false,
+					scrollPerPage : false,
+					pagination : false,
+					paginationNumbers : false,
+				});
+
+			});
+		</script>
+		<!-- //Owl Carousel Assets -->
+<!-- start circle -->
+<script>
+(function($){
+	$.fn.percentPie = function(options){
+
+		var settings = $.extend({
+			width: 100,
+			trackColor: "EEEEEE",
+			barColor: "E2534B",
+			barWeight: 30,
+			startPercent: 0,
+			endPercent: 1,
+			fps: 60
+		}, options);
+
+		this.css({
+			width: settings.width,
+			height: settings.width
+		});
+
+		var	that = this,
+			hoverPolice = false,
+			canvasWidth = settings.width,
+			canvasHeight = canvasWidth,
+			id = $('canvas').length,
+			canvasElement = $('<canvas id="'+ id +'" width="' + canvasWidth + '" height="' + canvasHeight + '"></canvas>'),
+			canvas = canvasElement.get(0).getContext("2d"),
+			centerX = canvasWidth/2,
+			centerY = canvasHeight/2,
+			radius = settings.width/2 - settings.barWeight/2;
+			counterClockwise = false,
+			fps = 1000 / settings.fps,
+			update = .01;
+			this.angle = settings.startPercent;
+
+		this.drawArc = function(startAngle, percentFilled, color){
+			var drawingArc = true;
+			canvas.beginPath();
+			canvas.arc(centerX, centerY, radius, (Math.PI/180)*(startAngle * 360 - 90), (Math.PI/180)*(percentFilled * 360 - 90), counterClockwise);
+			canvas.strokeStyle = color;
+			canvas.lineWidth = settings.barWeight;
+			canvas.stroke();
+			drawingArc = false;
+		}
+
+		this.fillChart = function(stop){
+			var loop = setInterval(function(){
+				hoverPolice = true;
+				canvas.clearRect(0, 0, canvasWidth, canvasHeight);
+
+				that.drawArc(0, 360, settings.trackColor);
+				that.angle += update;
+				that.drawArc(settings.startPercent, that.angle, settings.barColor);
+
+				if(that.angle > stop){
+					clearInterval(loop);
+					hoverPolice = false;
+				}
+			}, fps);
+		}
+
+		this.mouseover(function(){
+			if(hoverPolice == false){
+				that.angle = settings.startPercent;
+				that.fillChart(settings.endPercent);
+			}
+		});
+
+		this.fillChart(settings.endPercent);
+		this.append(canvasElement);
+		return this;
+	}
+}(jQuery));
+
+$(document).ready(function() {
+
+	$('.google').percentPie({
+		width: 100,
+		trackColor: "E2534B",
+		barColor: "76C7C0",
+		barWeight: 20,
+		endPercent: .9,
+		fps: 60
+	});
+  
+  $('.moz').percentPie({
+		width: 100,
+		trackColor: "E2534B",
+		barColor: "76C7C0",
+		barWeight: 20,
+		endPercent: .75,
+		fps: 60
+	});
+  
+  $('.safari').percentPie({
+		width: 100,
+		trackColor: "E2534B",
+		barColor: "#76C7C0",
+		barWeight: 20,
+		endPercent: .5,
+		fps: 60
+	});
+    
+});
+</script>
+</head>
+<body>
+<div class="header_bg">
+
+
+<div class="container">
+	<div class="header">
+	
+	<div class="social-icons" align="right">
+	
+			     <a href="#" target="_blank"><img src="img/freeze/facebook.png" alt=""></a>&nbsp;&nbsp;
+ <a href="#" target="_blank"><img src="img/freeze/google.png" alt=""></a>&nbsp;&nbsp;
+              <a href="#" target="_blank"><img src="img/freeze/twitter.png" alt=""></a>&nbsp;&nbsp;
+              <a href="#" target="_blank"><img src="img/freeze/printerst.png" alt=""></a>&nbsp;&nbsp;
+              <a href="#" target="_blank"><img src="img/freeze/linkedin.png" alt=""></a>
+		</div><br>
+	
+		<div class="logo">
+			<a href="index-2.html"><img src="iimages/logo1 (2).png" width ="200" height ="140" alt=""/></a>
+		</div>
+		<div class="h_menu">
+		<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
+		<nav>
+		<ul class="menu list-unstyled">
+			<li class="activate"><a href="index-2.html">HOME</a></li>
+			<li><a href="aboutus.html">ABOUT</a>
+			<ul class="sub-menu list-unstyled">
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="whyus.html">Why Us ?</a></li>
+				<li><a href="clients.html">Our Clients</a></li>
+			</ul>
+			</li>
+			
+			<li><a href="services.html">SERVICES</a></li>
+			<li><a href="#">RICE</a>
+			<ul class="sub-menu list-unstyled">
+				<li><a href="steam_rc.html">1121 Steam Rice</a></li>
+				<li><a href="goldensella_rc.html">1121 Golden Sella Rice</a></li>
+				<li><a href="whitesella_rc.html">1121 White Sella Rice</a></li>
+				<li><a href="sharbatisella_rc.html">Sharbati Sella Rice</a></li>
+				<li><a href="pusabasmati_rc.html">Pusa Basmati Rice</a></li>
+				<li><a href="brownbasmati_rc.html">Brown Pusa Basmati Rice</a></li>
+				<li><a href="whitebasmati_rc.html">White Pusa Basmati Rice</a></li>
+				<li><a href="tradi_basmati_rc.html">Traditional Basmati Rice</a></li>
+				<li><a href="nonbasmati_rc.html">Non Basmati Rice</a></li>
+				<li><a href="celeryseeds.html">Celery Seeds</a></li>
+			</ul>
+			</li>
+			<li><a href="#">WHEAT</a>
+			<ul class="sub-menu list-unstyled">
+				<li><a href="purewheat.html">Pure Wheat</a></li>
+				<li><a href="freshwheat.html">Fresh Wheat</a></li>
+				<li><a href="rawwheat.html">Raw Wheat</a></li>
+			</ul>
+			</li>
+			
+			<li><a href="#">EXPORT</a>
+			<ul class="sub-menu list-unstyled">
+				<li><a href="export_items.html">Export Items</a></li>
+				<li><a href="process.html">Process</a></li>
+			</ul>
+			</li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		</nav>
+		<script src="js/menu.js" type="text/javascript"></script>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+    <div id="fwslider"><!-- start slider -->
+        <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+                    <img src="images/slider1.jpg">
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                        
+                        <!-- /Text title -->
+                        <!-- Text description -->
+                        <p class="description">SUPERIOR RICE. OPTIMAL NUTRITION.</p>
+                        <!-- /Text description -->
+                    </div>
+                </div>
+                 <!-- /Texts container -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+                <img src="images/slider2.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">SUPERIOR RICE. OPTIMAL NUTRITION.</p>
+                    </div>
+                </div>
+			</div>
+				<!--/slide -->
+				
+				<div class="slide">
+                <img src="images/slider3.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                       
+                        <p class="description">SUPERIOR RICE. OPTIMAL NUTRITION.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			
+			<div class="slide">
+                <img src="images/slider4.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">SUPERIOR RICE. OPTIMAL NUTRITION.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			
+			<div class="slide">
+                <img src="images/slider5.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">RELIABLE QUALITY. EFFICIENT INFRASTRUCTURE.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			<div class="slide">
+                <img src="images/slider6.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">SUPERIOR & RELIABLE QUALITY RICE EXPORTER.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			<div class="slide">
+                <img src="images/slider7.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <p class="description">DIFFERENT PEOPLE. DIFFERENT TASTES. ONE FAVORITE.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			<div class="slide">
+                <img src="images/slider8.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">BACKED BY MODERN RESEARCH. WORLD-CLASS RELIABLE QUALITY RICE.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			<div class="slide">
+                <img src="images/slider9.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">BACKED BY MODERN RESEARCH. WORLD-CLASS RELIABLE QUALITY RICE.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+			<div class="slide">
+                <img src="images/slider10.jpg">
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <p class="description">BACKED BY MODERN RESEARCH. WORLD-CLASS RELIABLE QUALITY RICE - DIFFERENT PEOPLE. DIFFERENT TASTES. ONE FAVORITE.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
+			
+        </div>
+		
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+    </div><!--/slider -->
+<div class="main_bg"><!-- start main -->
+<div class="container">
+	<div class="main_grid">
+		<div class="top_grid"><!-- start top_grid -->
+				<div align="center">
+				
+		<h3><font color="#990000" size="+3" style="font-family:Lucida Calligraphy;">Brown Pusa Basmati Rice</font></h3>
+						
+						<img src="images/sijarice2/brown-pusa-basmati-rice-1159403.jpg" alt=""/ align="middle"><br><br>
+						
+				
+				<p align="justify"><font size="+1">
+				
+<img src="images/fancy_right.png" alt=""/> We offer finest quality Brown Pusa Basmati Rice to our valuable clients. Our Brown Pusa Basmati Rice is widely acclaimed for its nutritional value and purity. Brown Pusa Basmati Rice offered by us is grown organically and provides a great taste. We are one of the best Exporters of 1121 Brown Rice. Processed using technically advanced machinery, Brown Pusa Basmati Rice is being acknowledged for its longer shelf life, magnificent aroma, and fine-polished. We provide our range in high-grade packing material so as to ensure protection against insects and germs. Our clients can avail the offered packing in different packing quantity as per their requirement.<br><br>
+
+<font color="#990000" style="font-family:Arial, Helvetica, sans-serif;"><b>Attributes :</b></font><br><br>
+
+<img src="images/fancy_right.png" alt=""/> Great aroma<br>
+<img src="images/fancy_right.png" alt=""/> No adulteration<br>
+<img src="images/fancy_right.png" alt=""/> Pure<br>
+<img src="images/fancy_right.png" alt=""/> Economical prices<br>
+<img src="images/fancy_right.png" alt=""/> Usage in various cuisines<br>
+
+
+</font><br><br>
+						</p>
+						
+						
+				</div>
+				
+				<div class="clearfix"></div>
+		</div>
+		
+		
+	</div>
+</div>
+</div>
+<div class="main1_bg"><!-- start main1 -->
+<div class="container">
+	
+	
+	
+	
+	
+	
+</div>
+
+
+</div>
+<div class="main_btm"><!-- start main_btm -->
+<div class="container">
+	<div class="main span_of_3">
+		<div class="col-md-3 span1_of_3">
+			<h4>Reason for Working with us....</h4>
+			<ul class="list-unstyled nav_list">
+				<li><a href="#">Wide range of Indian Origin Rice at competitive prices</a></li>
+				<li><a href="#">Long and deep understanding of procuring, storing, milling and exporting rice</a></li>
+				<li><a href="#">Complete Solutions Powered by advanced rice milling machineries</a></li>
+				<li><a href="#">Remarkable quality standards and quality assurance</a></li>
+				<li><a href="#">Professional work force and 24x7 production monitoring</a></li>
+				<li><a href="#">Moderns testing laboratory at the mill</a></li>
+				<li><a href="#">Trusted Supplier</a></li>
+				<li><a href="#">Commitment</a></li>
+			</ul>
+		</div>	
+		<div class="col-md-6 span1_of_3">
+			<h5>We are exporting Basmati Rice to South East Asian, Middle East, Saudi Arabia, UAE and African Countries. Our Office are spread in various parts of the globe including Dubai and India.<br><br>
+We cater to all varieties Traditional Basmati, Pusa Basmati, 1121 Basmati Sharbati Basmati and in all forms - Brown, Milled Raw, Steamed, Par-boiled / Sella - White /Golden. Non Basmati varieties are PR 14, PR11, PR 106, IR 64, IR14 and in all forms - Brown, Milled Raw, Steamed, Par-boiled / Sella - White /Golden. Ponni varieties are chella ponni,kalsar Ponni, Andra Ponni and karnataka Ponni, swarna Masuri and Idly Rice Ambai 16. Has capability to pack in all forms of packaging materials.</h5>
+				
+		</div>	
+		<div class="col-md-3 span1_of_3">
+			<h4>The best quality grain and traits</h4>
+
+			<div class="clients">
+				<p>Our commitment to quality ensures that our processes are in line with global standards for food safety, quality and control. Understanding our customers' requirements and driving processes to meet these requirements is veritably accomplished with the help of our Quality Assurance and Control standards.</p>
+			</div>
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="cau_hide">
+	<div class="cursual"><!--  start cursual  -->
+		<h4>Our Products<span class="line"></span></h4>
+	</div>
+	<div id="owl-demo" class="owl-carousel"><!----start-img-cursual---->
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small1.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small2.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small3.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small4.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small5.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small6.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>
+		<div class="item">
+			<div class="cau_left">
+				<img class="lazyOwl" data-src="images/small7.jpg" alt="Lazy Owl Image">
+			</div>
+		</div>	
+		
+	</div><!----//End-img-cursual---->
+	</div>
+</div>
+</div>
+<div class="footer_bg"><!-- start footer -->
+<div class="container">
+	<div class="footer">
+		<div class="col-md-4 footer1_of_3">
+			<div class="f_logo">
+				<a href="index-2.html"><img src="images/logo1 (2).png" width ="200" height ="140" alt=""/></a>
+			</div>		
+			<p class="f_para">Owing to the vast experience and a competent team of adept professionals coupled with technical expertise the range of Basmati rice products at PD Overseas straddles the entire spectrum.</p>
+			<p>Phone:&nbsp;<span>+91 9779960666</span></p>
+<br><p>Phone:&nbsp;<span>+91 9888115700</span></p>
+			<span class="">Email:&nbsp;<a href="mailto:info@pdoverseas.com">info@pdoverseas.com</a><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="mailto:"></a></span>
+		</div>
+		<div class="col-md-2 footer1_of_3">
+			<h4><font color="#FFFFFF" size="+2">company</font></h4>
+			<ul class="list-unstyled f_list">
+				<li><a href="aboutus.html">About us</a></li>
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="whyus.html">Why Us ?</a></li>
+				<li><a href="clients.html">Our Clients</a></li>
+				<li><a href="process.html">PROCESS</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2 footer1_of_3">
+			<h4><font color="#FFFFFF" size="+2">Exports</font></h4>
+			<ul class="list-unstyled f_list">
+				<li><a href="#">RICE</a></li>
+				<li><a href="#">WHEAT</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2 footer1_of_3">
+			<h4><font color="#FFFFFF" size="+2">Our Products</font></h4>
+			<ul class="list-unstyled f_list">
+				<li><a href="#">RICE</a></li>
+				<li><a href="#">WHEAT</a></li>
+			</ul>
+			
+			<div class="span_1_of_3"><br><br><br><br>
+			<h2><font color="#FFFFFF" size="+2">Find Us On</font></h2>
+			<div>
+	
+			     <a href="#" target="_blank"><img src="img/freeze/facebook.png" alt=""></a>
+ <a href="#" target="_blank"><img src="img/freeze/google.png" alt=""></a>
+              <a href="#" target="_blank"><img src="img/freeze/twitter.png" alt=""></a>
+              <a href="#" target="_blank"><img src="img/freeze/printerst.png" alt=""></a>
+              <a href="#" target="_blank"><img src="img/freeze/linkedin.png" alt=""></a>
+		</div>
+		</div>
+			
+</div>
+
+<div id="google_translate_element" align="right"><!--.translate_element--><script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,fr,pt,zh-CN,zh-TW,ar,nl,eo,da,de,it,ja,la,hi,ga', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: '#'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+</div><!--.languages-->
+
+		
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+<div class="container">
+	<div class="footer1">
+		<div class="copy pull-left">
+			<p class="link"><span>&#169; copyright protected, All rights reserved | Designed & Developed by&nbsp;<a href="#" target="_blank">Unique Tech.</a></span></p>
+		</div>
+		<div class="soc_icons pull-right">
+			<ul class="list-unstyled text-center">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li>
+				<a href="#"><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+</body>
+
+#<!-- Mirrored from pdoverseas.com/brownbasmati_rc.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 18:05:57 GMT -->
+</html>
